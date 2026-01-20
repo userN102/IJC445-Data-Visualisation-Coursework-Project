@@ -2,8 +2,10 @@
 
 # Enterprise Dynamics across UK Industries (2019–2023)
 
+
 ## Overview
 This project explores how patterns of enterprise entry, exit, survival, and growth differed across major UK industries between 2019 and 2023. Using official UK Office for National Statistics (ONS) Business Demography data, a composite visualisation is developed to examine multiple dimensions of business dynamism together rather than relying on single indicators.
+
 
 ## Research question
 How did enterprise entry, exit, survival, and growth dynamics differ across key UK industries between 2019 and 2023?
@@ -77,3 +79,4 @@ All required output folders are created automatically if they do not exist.
 - Entry intensity varies substantially across industries after adjusting for size.
 - High entry rates do not always coincide with higher short-term survival.
 - A small number of firms account for a disproportionate share of high-growth activity, regardless of overall entry levels.
+# IJC445-Data-Visualisation-Coursework-Project
