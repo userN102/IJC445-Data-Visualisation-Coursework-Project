@@ -2,9 +2,15 @@
 
 # Enterprise Dynamics across UK Industries (2019–2023)
 
-
 ## Overview
 This project explores how patterns of enterprise entry, exit, survival, and growth differed across major UK industries between 2019 and 2023. Using official UK Office for National Statistics (ONS) Business Demography data, a composite visualisation is developed to examine multiple dimensions of business dynamism together rather than relying on single indicators.
+
+This repository is published as a GitHub Pages project site at:  
+[https://usern102.github.io/IJC445-Data-Visualisation-Coursework-Project/](https://usern102.github.io/IJC445-Data-Visualisation-Coursework-Project/)
+
+**GitHub Repository:**  
+[https://github.com/userN102/IJC445-Data-Visualisation-Coursework-Project](https://github.com/userN102/IJC445-Data-Visualisation-Coursework-Project)
+
 
 
 ## Research question
@@ -43,7 +49,13 @@ The analysis is implemented in **R**. Required packages include:
 - ggrepel  
 - scales 
 
+
+
 ## How to run the project
+All R scripts are located in the `Codes/` folder:  
+[https://github.com/userN102/IJC445-Data-Visualisation-Coursework-Project/tree/main/Codes](https://github.com/userN102/IJC445-Data-Visualisation-Coursework-Project/tree/main/Codes)
+
+
 Run the R scripts in the following order:
 
 1. **Extract and clean raw ONS tables**
