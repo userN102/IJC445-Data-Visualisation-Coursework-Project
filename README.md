@@ -91,5 +91,3 @@ All required output folders are created automatically if they do not exist.
 - Entry intensity varies substantially across industries after adjusting for size.
 - High entry rates do not always coincide with higher short-term survival.
 - A small number of firms account for a disproportionate share of high-growth activity, regardless of overall entry levels.
-# IJC445-Data-Visualisation-Coursework-Project
-# IJC445-Data-Visualisation-Coursework-Project
