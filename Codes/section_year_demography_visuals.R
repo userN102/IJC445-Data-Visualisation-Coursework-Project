@@ -70,18 +70,18 @@ plot_v1 <- ggplot(viz_long, aes(x = year, y = count, colour = event_type, group 
     y = "Number of enterprises",
     colour = "Enterprise event"
   ) +
-  theme_minimal(base_size = 10) +
+  theme_minimal(base_size = 13) +
   theme(
     plot.title = element_text(
       face = "bold",
-      size = 12
+      size = 13.5
     ),
     plot.subtitle = element_text(
-      size = 10,          
+      size = 12.5,          
       colour = "grey35" 
     ),
     plot.caption = element_text(
-      size = 9,
+      size = 11,
       colour = "grey40",
       hjust = 1
     ),
@@ -152,14 +152,14 @@ plot_v2 <- ggplot(
     x = 0.112,
     y = 0.118,
     label = "Births = Deaths",
-    size = 3,
+    size = 5,
     colour = "grey40"
   ) +
   geom_point(alpha = 0.85) +
   ggrepel::geom_text_repel(
     aes(label = section_name),
     colour = "grey10",
-    size = 3.2,
+    size = 3.8,
     box.padding = 0.8,
     point.padding = 0.7,
     force = 2,
@@ -213,11 +213,11 @@ plot_v2 <- ggplot(
     colour = "Net outcome",
     caption = "Source: UK Office for National Statistics (ONS), Business Demography."
   ) +
-  theme_minimal(base_size = 10) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold",size = 12),
-    plot.subtitle = element_text(size = 10, colour = "grey40"),
-    plot.caption = element_text(size = 9, colour = "grey40",hjust=1),
+    plot.title = element_text(face = "bold",size = 14),
+    plot.subtitle = element_text(size = 13, colour = "grey40"),
+    plot.caption = element_text(size = 11, colour = "grey40",hjust=1),
     panel.grid.major = element_line(colour = "grey90"),
     panel.grid.minor = element_blank(),
     legend.position = "right"
@@ -270,16 +270,16 @@ plot_v3 <- ggplot(viz_entry_intensity, aes(x = section_name, y = mean_rate)) +
   scale_y_continuous(expand = expansion(mult = c(0.02, 0.20))) +  
   labs(
     title = "Which industries are more entrepreneurship-intensive relative to their size?",
-    subtitle = "Entry intensity = enterprise births per 1,000 active enterprises. Bars show the 2019–2023 mean.",
+    subtitle = "Entry intensity = enterprise births per 1,000 active enterprises.\nBars show the 2019–2023 mean.",
     x = NULL,
     y = "Births per 1,000 active enterprises",
     caption = "Source: UK Office for National Statistics (ONS), Business Demography."
   ) +
-  theme_minimal(base_size = 10) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 10, colour = "grey40"),
-    plot.caption = element_text(size = 9, colour = "grey40", hjust = 1),
+    plot.title = element_text(face = "bold", size = 13.5),
+    plot.subtitle = element_text(size = 13, colour = "grey40"),
+    plot.caption = element_text(size = 11, colour = "grey40", hjust = 1),
     panel.grid.minor = element_blank(),
     panel.grid.major.y = element_blank(),
     panel.grid.major.x = element_line(colour = "grey90", linewidth = 0.35)
@@ -331,7 +331,7 @@ plot_v4 <- ggplot(viz_resilience, aes(birth_rate_avg, survival_rate_avg, colour 
   geom_hline(yintercept = y_cut, linetype = "dashed", colour = "grey40") +
   ggrepel::geom_label_repel(
     aes(label = section_name),
-    size = 3,
+    size = 4,
     fill = "white",
     alpha = 0.85,
     label.size = 0,
@@ -349,17 +349,17 @@ plot_v4 <- ggplot(viz_resilience, aes(birth_rate_avg, survival_rate_avg, colour 
   scale_x_continuous(labels = percent_format(accuracy = 1)) +
   labs(
     title = "Does high enterprise entry coincide with higher short-term survival across industries?",
-    subtitle = "Entry intensity vs one-year survival (2019–2023 mean).\nQuadrants are defined using median birth and survival rates and indicate relative industry profiles rather than absolute performance thresholds.",
+    subtitle = "Entry intensity vs one-year survival (2019–2023 mean).\nQuadrants are defined using median birth \nand survival rates and indicate relative industry profiles rather than absolute performance thresholds.",
     x = "Average birth rate (births / active enterprises)",
     y = "Average one-year survival rate",
     colour = "Resilience profile",
     caption = "Source: UK Office for National Statistics (ONS), Business Demography."
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold",size = 12),
-    plot.subtitle = element_text(size = 10, colour = "grey40"),
-    plot.caption = element_text(size = 9, colour = "grey40",hjust=1),
+    plot.title = element_text(face = "bold",size = 14),
+    plot.subtitle = element_text(size = 13, colour = "grey40"),
+    plot.caption = element_text(size = 12, colour = "grey40",hjust=1),
     panel.grid.minor = element_blank()
   )
 
@@ -420,16 +420,16 @@ plot_v5 <- ggplot(
   ) +
   labs(
     title = "Which industries generate more high-growth enterprises relative to size?",
-    subtitle = "Dots show the 2019–2023 mean. Horizontal lines indicate annual min–max variation (not a confidence interval).\nHigh-growth enterprises are those classified by ONS as experiencing rapid employment growth.",
+    subtitle = "Dots show the 2019–2023 mean.\nHorizontal lines indicate annual min–max variation (not a confidence interval).\nHigh-growth enterprises are defined by the ONS as rapidly growing in employment.",
     x = "High-growth enterprises per 1,000 active enterprises",
     y = NULL,
     caption = "Source: UK Office for National Statistics (ONS), Business Demography."
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold",size=12),
-    plot.subtitle = element_text(size = 10, colour = "grey40"),
-    plot.caption = element_text(size = 9, colour = "grey40", hjust=1),
+    plot.title = element_text(face = "bold",size=14),
+    plot.subtitle = element_text(size = 12, colour = "grey40"),
+    plot.caption = element_text(size = 11, colour = "grey40", hjust=1),
     panel.grid.major.y = element_line(colour = "grey85", linewidth = 0.4),
     panel.grid.major.x = element_line(colour = "grey92", linewidth = 0.3),
     panel.grid.minor = element_blank()
