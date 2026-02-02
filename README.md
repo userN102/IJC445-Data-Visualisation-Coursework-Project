@@ -37,7 +37,7 @@ All visual outputs are saved as PNG files in the `Visuals/` folder.
 
 ## Data source
 All data are drawn from the UK Office for National Statistics (ONS) Business Demography dataset. Available at:
-https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable
+[https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable](https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable)
 
 The original Excel file (`ons_original.xlsx`) is stored in `Dataset/ONS_Business_Demography/` and contains tables on enterprise births, deaths, survival, active enterprises, and high-growth firms by industry and year.
 
